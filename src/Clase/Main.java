@@ -7,38 +7,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // 1. clases y objetos
-        // Clase identificador = new Clase();
-        SmartDevice apple = new SmartDevice();
+
+    SmartWatch smartWatch = new SmartWatch("apple","watch","rojo",225,"",6);
 
 
-        SmartDevice xiaomi = new SmartDevice("Xiaomi", "RedmiNote11","azul",2245,"Sony");
+    SmartPhone smartPhone = new SmartPhone("xiaomi","note11","azul",3558,"sony",6);
 
-        System.out.println(xiaomi.marca);
-        System.out.println(xiaomi.modelo);
-        System.out.println(xiaomi.color);
-        xiaomi.bateria(20 );
-        System.out.println(xiaomi.velocidadcarga); // 50
+        System.out.println("El smartphone es: " + smartPhone + "\nEl smartwatch es: " + smartWatch);
 
 
-        // 2. herencia
-        SmartPhone huawei = new SmartPhone();
-        huawei.marca = "Huawei";
 
 
-        System.out.println("fin de programa");
 
-        // 3. polimorfismo
-        SmartDevice smartDevice;
-
-        smartDevice = new SmartPhone();
-        smartDevice.bateria(20);
-
-        smartDevice = new SmartWatch();
-        smartDevice.bateria(20);
 
 
     }
+
 
 
 }
